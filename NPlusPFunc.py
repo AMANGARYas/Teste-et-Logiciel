@@ -1,4 +1,4 @@
 def min_n(lst, n):
-    pass
+    return sorted(lst)[:n]
 
 	
