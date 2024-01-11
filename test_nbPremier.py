@@ -6,7 +6,7 @@ class TestFuncs(unittest.TestCase):
     def test_is_prime(self):
         self.assertTrue(nbPremier.is_prime(2))      
         self.assertTrue(nbPremier.is_prime(3))      
-        self.assertTrue(EnbPremier.is_prime(5))      
+        self.assertTrue(nbPremier.is_prime(5))      
         self.assertFalse(nbPremier.is_prime(4))     
         self.assertFalse(nbPremier.is_prime(9))     
         self.assertTrue(nbPremier.is_prime(11))         
