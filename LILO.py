@@ -12,7 +12,7 @@ class LILO:
         return None
 
     def is_empty(self):
-        pass
+        return len(self.queue) == 0
 
     def print_queue(self):
         return self.queue
