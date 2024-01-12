@@ -1,3 +1,5 @@
+
+
 class LIFO:
     def __init__(self):
         self.stack = []
@@ -13,3 +15,4 @@ class LIFO:
 
     def print_stack(self):
         return self.stack
+
