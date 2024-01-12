@@ -26,6 +26,10 @@ class TestLILO(unittest.TestCase):
         lilo.dequeue()
         self.assertEqual(lilo.print_queue(), [3])
 
+        lilo.dequeue()
+        self.assertEqual(lilo.print_queue(), [])
+
+        self.assertIsNone(lilo.dequeue())        
 
 if __name__ == '__main__':
     unittest.main()
