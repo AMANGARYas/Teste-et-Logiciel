@@ -20,6 +20,11 @@ class TestLIFO(unittest.TestCase):
         self.assertEqual(lifo.print_stack(), [1])
 
 
+        lifo.pop()
+        self.assertEqual(lifo.print_stack(), [])
+
+        self.assertIsNone(lifo.pop())
+
 
 if __name__ == '__main__':
     unittest.main()
