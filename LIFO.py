@@ -8,7 +8,9 @@ class LIFO:
         self.stack.append(item)
 
     def pop(self):
-        pass
+        if not self.is_empty():
+            return self.stack.pop()
+        return None
 
     def is_empty(self):
         pass
