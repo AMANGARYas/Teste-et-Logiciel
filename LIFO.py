@@ -3,7 +3,7 @@ class LIFO:
         self.stack = []
 
     def push(self, item):
-        pass
+        self.stack.append(item)
 
     def pop(self):
         pass
