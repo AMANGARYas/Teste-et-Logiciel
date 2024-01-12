@@ -9,4 +9,5 @@ class LIFO:
     def pop(self):
     	pass
 
-
+    def is_empty(self):
+        pass

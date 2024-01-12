@@ -14,7 +14,15 @@ class TestLIFO(unittest.TestCase):
         self.assertEqual(lifo.pop(), 1, "Le premier élément ajouté doit être le troisième retiré")
         self.assertIsNone(lifo.pop(), "La pile doit être vide après tous les défilements")
 
+    def test_is_empty(self):
+        lifo = LIFO()
+        self.assertTrue(lifo.is_empty(), "La pile doit être vide au début")
 
+        lifo.push(1)
+        self.assertFalse(lifo.is_empty(), "La pile ne doit pas être vide après l'enfilement")
+
+        lifo.pop()
+        self.assertTrue(lifo.is_empty(), "La pile doit être vide après le défilement")
 
 if __name__ == '__main__':
     unittest.main()
