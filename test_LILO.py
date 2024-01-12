@@ -17,6 +17,15 @@ class TestLILO(unittest.TestCase):
 
         lilo.enqueue(3)
         self.assertEqual(lilo.print_queue(), [1, 2, 3])
+        
+
+        lilo.dequeue()
+        self.assertEqual(lilo.print_queue(), [2, 3])
+
+      
+        lilo.dequeue()
+        self.assertEqual(lilo.print_queue(), [3])
+
 
 if __name__ == '__main__':
     unittest.main()
