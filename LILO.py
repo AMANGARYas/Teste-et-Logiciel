@@ -4,7 +4,7 @@ class LILO:
         self.queue = []
 
     def enqueue(self, item):
-        pass
+        self.queue.append(item)
 
     def dequeue(self):
         pass
