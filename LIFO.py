@@ -13,7 +13,7 @@ class LIFO:
         return None
 
     def is_empty(self):
-        pass
+        return len(self.stack) == 0
 
     def print_stack(self):
         return self.stack
